@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/parent_id">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/imageThump_id"
+            android:transitionName="imageTransition"
+            android:src="@mipmap/ic_launcher_round"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageThump_id"
+            android:textColor="@android:color/black"
+            android:text="text"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:transitionName="nameTransition"
+            android:id="@+id/name_id"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageThump_id"
+            android:layout_below="@+id/name_id"
+            android:textColor="@android:color/black"
+            android:text="text"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginLeft="30dp"
+            android:transitionName="authorTransition"
+            android:id="@+id/author_id"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/name_id"
+            android:textColor="@android:color/black"
+            android:text="text"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginLeft="30dp"
+            android:transitionName="teamTransition"
+            android:id="@+id/team_id"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageThump_id"
+            android:layout_below="@+id/author_id"
+            android:textColor="@android:color/black"
+            android:text="text"
+            android:textSize="15dp"
+            android:layout_marginLeft="30dp"
+            android:transitionName="descTransition"
+            android:id="@+id/desc_id"/>
+
+        <ImageView
+            android:id="@+id/bkg_thumb"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="30sp"
+            android:layout_below="@+id/desc_id"
+            android:layout_toRightOf="@id/imageThump_id"
+            android:src="@drawable/mcu_icon"
+            android:transitionName="imagebcgTransition"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
